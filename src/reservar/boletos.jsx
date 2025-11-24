@@ -116,7 +116,7 @@ export default function TicketModal({
         formData.append("exp", exp);
         formData.append("cvv", cvv);
 
-        const res = await fetch("https://bengalaexpo2025.infinityfree.me/BENGALA-BACKEND/guardar_compra.php", {
+        const res = await fetch("https://bengalaexpo2025.atwebpages.com/guardar_compra.php", {
             method: "POST",
             body: formData
         });
