@@ -1,0 +1,107 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation: fadeIn .3s;
+}
+
+.modal-content {
+    background: rgba(15, 15, 20, .95);
+    padding: 25px;
+    width: 380px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 0 25px rgba(36, 111, 132, 0.4);
+    animation: scaleIn .3s ease;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.buy-button {
+    width: 100%;
+    padding: 12px;
+    background: #0af;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.buy-button:hover {
+    background: #08c;
+}
+
+.close-button {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, .15);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background: rgba(255, 255, 255, .25);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+.error {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.total {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.timer {
+    background: rgba(20, 89, 105, 0.2);
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: .6; }
+    100% { opacity: 1; }
+}

@@ -1,0 +1,116 @@
+/* ====== NAVBAR PRINCIPAL ====== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 0 40px;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+}
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Contenedor interno para centrar y espaciar */
+.navbar-content {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+/* ====== TEXTO ====== */
+.navbar-content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* ====== INPUT Y BOTÓN ====== */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 2px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+.input-group:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.02);
+}
+
+.input-group p {
+  margin: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.input-group input[type="date"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+}
+
+.input-group input[type="date"]:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+
+/* ====== BOTÓN ====== */
+.input-group button {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.input-group button:hover {
+  
+  transform: scale(1.05);
+}
+
+.input-group button:active {
+  transform: scale(0.98);
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 600px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 12px 20px;
+  }
+}
+
+
